@@ -1,7 +1,7 @@
-import { styles } from "./assets.js";
+import { styles } from "./asset.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js";
-import "https://cdn.jsdelivr.net/gh/procode2/demo_widget@main/index.js";
+import "./mainChat.js";
 
 class MessageWidget {
   constructor(position = "bottom-right") {
@@ -36,7 +36,6 @@ class MessageWidget {
     this.createWidgetContent();
 
     container.appendChild(this.widgetContainer);
-    container.appendChild(buttonContainer);
   }
 
   createWidgetContent() {

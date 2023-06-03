@@ -76,13 +76,13 @@ class MainChat {
   static updateChat(data) {
     if (this.username == "Chat Bot") {
       $(
-        '<div class="message loading new"><figure class="avatar"><img src="/public/img/sa.png" /></figure><span></span></div>'
+        '<div class="message loading new"><figure class="avatar"><img src="https://wmuza.github.io/SocketIO-Chat-App/public/img/sa.png" /></figure><span></span></div>'
       ).appendTo($(".mCSB_container"));
       MainChat.updateScrollbar();
       setTimeout(() => {
         $(".message.loading").remove();
         $(
-          '<div class="message new"><figure class="avatar"><img src="/public/img/sa.png" /></figure>' +
+          '<div class="message new"><figure class="avatar"><img src="https://wmuza.github.io/SocketIO-Chat-App/public/img/sa.png" /></figure>' +
             data +
             "</div>"
         )
@@ -108,13 +108,13 @@ class MainChat {
   static fakeMessage() {
     if ($(".message-input").val() != "") return false;
     $(
-      '<div class="message loading new"><figure class="avatar"><img src="/public/img/sa.png" /></figure><span></span></div>'
+      '<div class="message loading new"><figure class="avatar"><img src="https://wmuza.github.io/SocketIO-Chat-App/public/img/sa.png" /></figure><span></span></div>'
     ).appendTo($(".mCSB_container"));
     MainChat.updateScrollbar();
     setTimeout(() => {
       $(".message.loading").remove();
       $(
-        '<div class="message new"><figure class="avatar"><img src="/public/img/sa.png" /></figure>' +
+        '<div class="message new"><figure class="avatar"><img src="https://wmuza.github.io/SocketIO-Chat-App/public/img/sa.png" /></figure>' +
           Fake[i] +
           "</div>"
       )
